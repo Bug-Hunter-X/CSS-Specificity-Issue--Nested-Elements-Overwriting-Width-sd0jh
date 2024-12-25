@@ -1,0 +1,27 @@
+To resolve this, we can use more specific selectors:
+
+/* Avoids the issue by using a more specific class */
+.outer-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.inner-container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+Or use more specific selectors:
+
+/* Solves this with an alternative approach using different classes */
+#main-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#nested-container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+This ensures that the inner container's styles don't inadvertently affect the outer container's width.  Using different classes allows each element to be independently styled and prevents unexpected cascading style issues.
