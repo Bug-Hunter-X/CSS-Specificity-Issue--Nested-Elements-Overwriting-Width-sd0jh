@@ -1,0 +1,8 @@
+The following CSS rule targets all elements with the class "container":
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+However, if you have nested elements with the same class, the inner "container" will inherit and overwrite the width from its parent.  If the inner container has a smaller width, the parent will still have the full width set, resulting in unexpected layout. This is because CSS is applied in a cascading manner, and the last declaration for a particular property will take precedence.
